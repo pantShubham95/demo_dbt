@@ -1,5 +1,6 @@
 
-  
+{{ config(materialized='view') }}
+
    SELECT
       customer_id,
       CONCAT(first_name, ' ', last_name) as customer_name,
